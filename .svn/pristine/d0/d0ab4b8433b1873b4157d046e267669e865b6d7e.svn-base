@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./java.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Cùng làm toán!</h2>
+    <p>Nhập số vào đây</p>
+    <input type="number" id="myNumber" placeholder="Nhập số vào đây"/>
+    <button type="button" onclick="myFunction()">Nhập</button>
+    <div id="main">
+        <div id="border" style="border: thin;">
+            <div id="sum-value">
+
+            </div>
+            
+        </div>
+        <div id="main">
+            <p id="sum">Tổng:</p>
+            <p id="result"></p>
+            <label>
+                <input type="checkbox" onclick="funCheck()" id="math-sqrt" 
+                       value="number1">Căn Bậc 2: 
+            </label> 
+            <p id="result1"></p>
+            
+            <input type="number" id="percentage" value="0" /> %
+            <button type="button" id="check" onclick="funcPercent()" value="0" >Nhập</button>
+            <p id="result2"></p>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./javascript.js"></script>
+
+    <!-- <script>
+            function myFunction() {
+                var x = document.getElementById("myNumber").value;
+                var y = document.getElementById("myNumber").value;
+                document.getElementById("demo").innerHTML = x;
+                document.getElementById("demo1").innerHTML = y;
+            
+            }
+     </script> -->
+    
+</html>

@@ -1,0 +1,51 @@
+$(function () {
+    $('#math-sqrt').click(function() {
+        let value1 = $('#result').text()
+            let canhai = Math.sqrt(parseInt(value1));
+            console.log(canhai);
+            $('#result1').text(canhai);
+
+            
+        
+    });
+})
+
+function myFunction() {
+    let value = $('#myNumber').val()
+    console.log(value);
+    $('#sum-value').append(`<p id=${value}>${value}</p>`)
+
+    $('#sum-value').each(function(){
+        let totalPoints = 0;
+        $(this).find('p').each(function(){
+          totalPoints += parseInt($(this).text()); //<==== a catch  in here !! read below
+        });
+        console.log(totalPoints)
+        $('#result').text(totalPoints)
+      });
+      
+
+      
+   
+}
+
+function funCheck() {
+    console.log('vo day');
+}
+
+function funcPercent() {
+    console.log('vao day')
+    let perc = $('#percentage').val()
+        
+        sum = $('#result').text()
+    resperc = ( sum * perc / 100 )
+    console.log(resperc)
+    $('#result2').text(resperc)
+
+}
+    
+
+
+   
+
+
